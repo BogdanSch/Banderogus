@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #1B1D1F;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.form-input {
+  display: block;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  -webkit-transition: border-bottom 0.2s ease-in-out;
+  transition: border-bottom 0.2s ease-in-out;
+  width: 100%;
+}
+
+.form-input:focus {
+  outline: none;
+  border-bottom: 2px solid #1e90ff;
+}
+
+.btn {
+  border: none;
+  background: transparent;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn-main {
+  color: #fff;
+  padding: 9px 12px;
+  background: #FF6B0A;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+.tryzub {
+  display: block;
+  margin: 32px auto;
+}
+
+.about {
+  background: linear-gradient(269.88deg, #A5DEFF 0.11%, #FCFEFE 99.9%);
+}
+.about .logo {
+  margin-top: 32px;
+}
+.about__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.about-description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 60px;
+  margin-top: 0;
+}
+.about-title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  margin: 0;
+}
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.about-card {
+  margin-top: 60px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 40px;
+  padding: 60px;
+}
+
+.facts {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 100px;
+}
+.facts-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+}
+.facts-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 772px;
+  margin: 32px auto;
+}
+.facts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.facts__item {
+  max-width: 30%;
+}
+.facts__item img {
+  max-width: 100%;
+}
+.facts__item-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+.facts__item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts {
+  padding-block: 80px;
+  background: linear-gradient(269.88deg, #A5DEFF 0.11%, #FCFEFE 99.9%);
+}
+.contacts .tryzub {
+  margin-top: 0;
+}
+.contacts__form {
+  padding: 32px 60px 64px;
+  background: #fff;
+  border-radius: 40px;
+  max-width: 54%;
+  margin: 0 auto;
+}
+.contacts__form-hint {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.contacts__form-hint h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.contacts__form-hint p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+.contacts__form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.contacts__form-name {
+  margin-bottom: 24px;
+}
+.contacts__form-email {
+  margin-bottom: 48px;
+}
+
+.gus-anim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 799px) {
+  .about-left {
+    max-width: 70%;
+  }
+  .facts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .facts__item {
+    max-width: 70%;
+  }
+  .contacts__form {
+    max-width: 100%;
+    padding: 35px;
+  }
+}
